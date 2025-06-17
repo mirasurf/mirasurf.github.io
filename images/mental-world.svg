@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="mentalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#2563eb;stop-opacity:0.2"/>
+            <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.2"/>
+        </linearGradient>
+    </defs>
+    <!-- Background circle -->
+    <circle cx="60" cy="60" r="50" fill="url(#mentalGradient)" stroke="white" stroke-width="2"/>
+    
+    <!-- Brain/Thought pattern -->
+    <path d="M40 40 Q60 20 80 40 T120 40" stroke="white" stroke-width="2" fill="none"/>
+    <path d="M30 60 Q60 40 90 60 T150 60" stroke="white" stroke-width="2" fill="none"/>
+    <path d="M40 80 Q60 100 80 80 T120 80" stroke="white" stroke-width="2" fill="none"/>
+    
+    <!-- Connection dots -->
+    <circle cx="40" cy="40" r="3" fill="white"/>
+    <circle cx="60" cy="40" r="3" fill="white"/>
+    <circle cx="80" cy="40" r="3" fill="white"/>
+    <circle cx="30" cy="60" r="3" fill="white"/>
+    <circle cx="60" cy="60" r="3" fill="white"/>
+    <circle cx="90" cy="60" r="3" fill="white"/>
+    <circle cx="40" cy="80" r="3" fill="white"/>
+    <circle cx="60" cy="80" r="3" fill="white"/>
+    <circle cx="80" cy="80" r="3" fill="white"/>
+</svg> 
