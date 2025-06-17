@@ -52,7 +52,7 @@ main {
 .nav-content {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,6 +62,23 @@ main {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-text {
+    background: linear-gradient(135deg, var(--gradient-end), var(--gradient-start));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.logo img {
+    display: block;
+    padding: 0;
 }
 
 .nav-links a {
