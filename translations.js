@@ -101,4 +101,6 @@ const translations = {
             copyright: "© 2025 Mirasurf AI. 保留所有权利。"
         }
     }
-}; 
+};
+
+window.translations = translations; 

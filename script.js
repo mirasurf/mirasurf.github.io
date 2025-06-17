@@ -6,7 +6,6 @@ function updateLanguage(lang) {
     
     // Update navigation
     document.querySelector('a[href="#vision"]').textContent = translations[lang].nav.vision;
-    document.querySelector('a[href="#strategy"]').textContent = translations[lang].nav.strategy;
     document.querySelector('a[href="#tech"]').textContent = translations[lang].nav.tech;
     document.querySelector('a[href="#purpose"]').textContent = translations[lang].nav.purpose;
     document.querySelector('a[href="#join"]').textContent = translations[lang].nav.join;
@@ -25,8 +24,8 @@ function updateLanguage(lang) {
     worlds[2].querySelector('h3').textContent = translations[lang].worlds.physical.title;
     worlds[2].querySelector('p').textContent = translations[lang].worlds.physical.description;
 
-    // Update strategy section
-    document.querySelector('#strategy h2').textContent = translations[lang].strategy.title;
+    // Update tech section
+    document.querySelector('#tech h2').textContent = translations[lang].strategy.title;
     const techItems = document.querySelectorAll('.tech-item');
     techItems[0].querySelector('p').textContent = translations[lang].strategy.experience;
     techItems[1].querySelector('p').textContent = translations[lang].strategy.context;
@@ -58,6 +57,11 @@ function updateLanguage(lang) {
 // Initialize language
 document.addEventListener('DOMContentLoaded', () => {
     updateLanguage(currentLang);
+
+    // Add click handler for language selector
+    document.querySelector('.lang-selector').addEventListener('click', () => {
+        updateLanguage(currentLang === 'en' ? 'zh' : 'en');
+    });
 
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
